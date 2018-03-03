@@ -5,24 +5,8 @@
         <title>!Bienvenidos a Yo Te Adopto!</title>
         <!--<link rel="stylesheet" href="https://necolas.github.io/normalize.css/8.0.0/normalize.css" />-->
         <link rel="stylesheet" href="https://meyerweb.com/eric/tools/css/reset/reset200802.css" />
-        <style>
-            /*selector de etiqueta*/
-            section {
-                position: relative;
-            }
-            img{
-                position:absolute;
-                left:0;
-                bottom: 0;
-                opacity: 0.1;
-            }
-            /*selector de descendencia*/
-            secction div{
-                position: relative;
-                z-index: 1;
-            }
+        <link rel="stylesheet" href="./styles/main.css"/>
         
-        </style>
     </head>
     <body>
         <section>
@@ -30,23 +14,25 @@
             <!-- Si la h se hace muy grande despues se le da formato, es creacion del indice -->
             <p>Hogares para nuestros amigos</p>
         </section>
-        <section style="background-color: #f06252; padding:64px">
-            <div>
-                <picture>
-                    <img 
-                        srcset="./images/aboutus-img_1x.png, 
-                        ./images/aboutus-img_1x.png 2x,
-                        ./images/aboutus-img_1x.png 3x"
-                        src="./images/aboutus-img_1x.png"
-                        alt=""
-                        style="position: relative; opacity:1"
-                    />
-                </picture>
-                <h2 style="color: #553457; font-size:28px; text-transform:uppercase; text-align:center">¿Qué es yo te adopto?</h2>
-                <p style="color:white; margin-top:15px">Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptate impedit ea earum sequi explicabo asperiores esse doloremque mollitia soluta, iure commodi. Quo, adipisci in. Eveniet tempora non dolorem fuga atque.</p>
-            </div>
-                <img src="./images/paw-print.png" alt="">
-            
+        <section class="yta_AboutUs">
+                <div class="yta_AboutUs-container">
+                    <div class="yta_AboutUs-container-dog">
+                         <picture>
+                            <img
+                            srcset="./images/aboutus-img_1x.png,
+                            ./images/aboutus-img_2x.png 2x,
+                            ./images/aboutus-img_3x.png 3x",
+                            src="./images/aboutus-img_1x.png"
+                            alt=""
+                            
+                            />
+                        </picture>
+                        <img class="yta_AboutUs-container-dog-isologo" src="./images/isologo.png" alt="">
+                    </div>
+                  <h2 class="yta_AboutUs-container-title">¿Qué es Yo Te Adopto?</h2>
+                  <p class="yta_AboutUs-container-desc">Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae, nihil. Dolores veniam reiciendis saepe eius. Aut natus culpa laudantium aliquid, maiores nam, optio accusamus pariatur, aspernatur laborum quisquam ipsa dolores!</p>
+                </div>
+                <img class="yta_AboutUs-pawPrint" src="./images/paw-print.png" alt="" />
         </section>
         <section>
             <h2>Busco un lugar, ¿Me adoptas?</h2>
