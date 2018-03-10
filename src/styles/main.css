@@ -1,3 +1,9 @@
+a{
+  text-decoration: none;
+  color: inherit;
+}
+
+
 .yta_Home {
   height: 600px; /*Primero el soportado y despues el que puede ser no soportado porque se sobreescribe*/
   height: 100vh;
@@ -121,3 +127,28 @@
     margin: 32px auto;
 
   }
+
+  footer {
+    background-color: #553457;
+    color: white;
+    text-align: center;
+    padding: 32px;
+
+  }
+    footer ul li {
+      display: inline-block; /*Desplega el texto en linea al ancho*/
+      margin: 10px 5px;
+
+    }
+
+    footer ul li:first-child{
+      margin-left: 0;
+    }
+
+    footer ul li:last-child{
+      margin-right: 0;
+    }
+
+    /*footer ul li:nth-child(2){
+      background-color: red;
+    }*/
