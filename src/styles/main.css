@@ -1,3 +1,19 @@
+.yta_Home {
+  height: 600px; /*Primero el soportado y despues el que puede ser no soportado porque se sobreescribe*/
+  height: 100vh;
+  background-color: #ffc85e; 
+  background-image: url(../images/bg-home.jpg);
+  background-repeat: no-repeat;
+  background-position-x: center;
+  background-position-y: center;
+  /*background-position: center; la misma de las dos arriba*/
+  background-size: cover; /*Hace que la imagen se extienda en x y y*/
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+
 .yta_AboutUs { 
     position: relative; 
     background-color: #f06252; 
